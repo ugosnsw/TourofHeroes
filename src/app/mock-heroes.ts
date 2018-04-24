@@ -1,3 +1,4 @@
+// 'Hero' used to define the hero objects which are in the array below
 import {Hero} from './hero';
 
 export const HEROES: Hero[] = [

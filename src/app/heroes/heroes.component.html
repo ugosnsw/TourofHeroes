@@ -1,9 +1,13 @@
-
-
 <div>
   <label>name: 
-    <input type="text" [(ngModel)] = "hero.name" placeholder="name">
+    <input type="text" placeholder="name">
   </label>
 </div>
 
-<p>{{hero.name}}</p>
+<!-- <p>{{hero.name}}</p> -->
+
+
+<h2>My heroes</h2>
+<ul>
+  <li *ngFor = "let hero of heroes" (click)="clickad()">{{hero.name}}</li>
+</ul>
