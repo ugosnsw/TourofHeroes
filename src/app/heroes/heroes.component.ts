@@ -8,6 +8,7 @@ import { HEROES } from '../mock-heroes';
 })
 export class HeroesComponent implements OnInit {
   heroes = HEROES;
+  selectedHero: string;
 
   constructor() {
   }
@@ -19,9 +20,10 @@ export class HeroesComponent implements OnInit {
     console.log("I have been clicked");
   }
 
-  // yoo() {
-  //   alert("Yooooooo!");
-  //   console.log("hello");
-  // }
+  // Function to display details when hero is selected
+  onSelect(hero){
+    this.selectedHero = hero;
+    console.log(this.selectedHero);
+  }
 
 }
