@@ -1,3 +1,4 @@
-<div>
-  <h2>{{selectedHero.name}} details</h2>
+<div *ngIf = "hero">
+  <h2>{{hero.name}} details</h2>
+  <p>id : {{hero.id}}</p>
 </div>

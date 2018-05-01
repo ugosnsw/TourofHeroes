@@ -12,6 +12,7 @@
   <li *ngFor = "let hero of heroes" (click)="onSelect(hero)">{{hero.name}}</li>
 </ul>
 
+<app-hero-details [hero] = "selectedHero"></app-hero-details>
 
 
 
